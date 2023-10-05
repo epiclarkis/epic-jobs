@@ -9,12 +9,10 @@ const Nav = ({user, setUser}) => {
 
     const handleLogin = () => {
         setUser(true)
-        console.log(`user: ${user}`)
     }
 
     const handleLogout = () => {
         setUser(false)
-        console.log(`user: ${user}`)
     }
 
     return (

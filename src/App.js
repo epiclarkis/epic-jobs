@@ -9,8 +9,6 @@ import { useState } from 'react'
 function App() {    
   const [user, setUser] = useState(false)
 
-  console.log(`user: ${user}`)
-
   return (
     <Router>
       <div className="app">

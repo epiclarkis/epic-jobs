@@ -18,7 +18,6 @@ const Job = ({user}) => {
     const [editMode, setEditMode] = useState(false)
 
     const handleDelete = async (id) => {
-            console.log(id)
             await fetch(`${apiUrl}/${id}`, {
                 method: 'DELETE'
             })
@@ -30,11 +29,8 @@ const Job = ({user}) => {
             })
     }
 
-    console.log(`editMode before edit: ${editMode}`)
-
     const handleEdit = () => {
         setEditMode(true)
-        console.log(`editMode after saving: ${editMode}`)
         if (editMode) {
             document.getElementById('title').contentEditable = true
         }
